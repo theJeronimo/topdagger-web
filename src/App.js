@@ -13,14 +13,17 @@ class App extends Component {
             <Header color='grey' size='big'>Data Driven Sports Ratings IRL</Header>
           </Container>
         </Segment>
+
+
         <Segment style={{ padding: '4em 0em' }} vertical>
-          <Grid container columns="2">
-            <Grid.Column>
+          <Grid container columns="2" verticalAlign="middle" stackable >
+            <Grid.Column >
               <Header size="large">
               Ratings just like in the Video Games, but IRL
               </Header>
-              <p>You ever wonder what 2K ratings would be like in real life? No need to wonder anymore.</p>
+              <p>You ever wonder what 2K ratings would be like in real life? No need to wonder anymore.</p>  
             </Grid.Column>
+
             <Grid.Column>
               <Segment container>
                 <Grid>
@@ -60,22 +63,42 @@ class App extends Component {
           </Grid>
         </Segment>
 
-
-        <Segment style={{ padding: '8em 0em' }} vertical>
-          
-          <Grid container columns="2" divided>
-            <Grid.Row>
-              <Grid.Column>
-                <Header size='huge'>Top Dagger</Header>
-                <p>This is gibberish so ignore me, blashea ehanbem hatnes na;sdfj weahdhlahfe a h as e akdhfahe a.</p>
-              </Grid.Column>
-              <Grid.Column>
-                <Header size='huge'>Top Dagger</Header>
-                <p>This is gibberish so ignore me, blashea ehanbem hatnes na;sdfj weahdhlahfe a h as e akdhfahe a.</p>
-              </Grid.Column>
-            </Grid.Row>
+        <Segment style={{ padding: '4em 0em' }} vertical>
+          <Grid container columns="2" verticalAlign="middle" stackable>
+            <Grid.Column>
+              <Header size="large">
+              Like a player?
+              </Header>
+              <p>
+                Bet on if their rating will improve. Part of what you win goes straight to that players account.
+                <br/><br/>
+                Everybody wins!
+              </p>  
+            </Grid.Column>
+            
+            <Grid.Column>
+              <Grid columns="3" textAlign="center" >
+                <Grid.Column>
+                  <Header size="huge">
+                    88
+                    <Header.Subheader>ovr</Header.Subheader> 
+                  </Header>
+                </Grid.Column>
+                <Grid.Column>
+                  <Icon size="huge" name="long arrow alternate right" color="grey"/>
+                </Grid.Column>
+                <Grid.Column>
+                  <Header size="huge" color="green">
+                    95
+                    <Header.Subheader>ovr</Header.Subheader> 
+                  </Header>
+                </Grid.Column>
+              </Grid>
+            </Grid.Column>
           </Grid>
         </Segment>
+
+        
       </div> 
     );
   }
