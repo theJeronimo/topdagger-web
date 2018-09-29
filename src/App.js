@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Header, Container, Grid, Segment, Icon } from 'semantic-ui-react';
-
+import { Header, Container, Grid, Segment, Icon, Input, Button } from 'semantic-ui-react';
+import PlayerCard from './Components/PlayerCard'
 
 class App extends Component {
   render() {
     return (
       <div>
+
+        {/* TOP OF PAGE */}
         <Segment style={{ padding: '8em 0em' }}  vertical>
           <Container text>
             <Header size='huge'>Top Dagger</Header>
@@ -14,91 +16,87 @@ class App extends Component {
           </Container>
         </Segment>
 
-
-        <Segment style={{ padding: '4em 0em' }} vertical>
+        {/* WHAT IS DAGGER RATING */}
+        <Segment style={{ padding: '6em 0em' }} vertical>
           <Grid container columns="2" verticalAlign="middle" stackable >
             <Grid.Column >
               <Header size="large">
               Ratings just like in the Video Games, but IRL
               </Header>
-              <p>You ever wonder what 2K ratings would be like in real life? No need to wonder anymore.</p>  
-            </Grid.Column>
-
-            <Grid.Column>
-              <Segment container>
-                <Grid>
-                  <Grid.Row textAlign="center" centered>
-                      <Header size="large" icon>
-                        <Icon name="user" size="huge"/>
-                        Joe Daggs
-                        <Header.Subheader>Team Dagger 3</Header.Subheader>
-                      </Header>
-                  </Grid.Row>
-                  <Grid.Row  columns="3">
-                    <Grid.Column textAlign="center">
-                      <Header size="large">
-                        94
-                        <Header.Subheader>off</Header.Subheader>
-                      </Header>
-                      
-                    </Grid.Column>
-                    <Grid.Column textAlign="center">
-                      <Header size="large">
-                        89
-                        <Header.Subheader>def</Header.Subheader>
-                      </Header>
-                      
-                    </Grid.Column>
-                    <Grid.Column textAlign="center">
-                      <Header size="large">
-                        92
-                        <Header.Subheader>ovr</Header.Subheader> 
-                      </Header>
-                      
-                    </Grid.Column>
-                  </Grid.Row>
-                </Grid>
-              </Segment>
-            </Grid.Column>
-          </Grid>
-        </Segment>
-
-        <Segment style={{ padding: '4em 0em' }} vertical>
-          <Grid container columns="2" verticalAlign="middle" stackable>
-            <Grid.Column>
-              <Header size="large">
-              Like a player?
-              </Header>
-              <p>
-                Bet on if their rating will improve. Part of what you win goes straight to that players account.
-                <br/><br/>
-                Everybody wins!
-              </p>  
+              <p>You ever wonder what 2K ratings would be like in real life? No need to wonder anymore. 
+                Dagger ratings tell you.</p>  
             </Grid.Column>
             
+            {/* JOE DAGG RATING CARD */}
             <Grid.Column>
-              <Grid columns="3" textAlign="center" >
-                <Grid.Column>
-                  <Header size="huge">
-                    88
-                    <Header.Subheader>ovr</Header.Subheader> 
-                  </Header>
-                </Grid.Column>
-                <Grid.Column>
-                  <Icon size="huge" name="long arrow alternate right" color="grey"/>
-                </Grid.Column>
-                <Grid.Column>
-                  <Header size="huge" color="green">
-                    95
-                    <Header.Subheader>ovr</Header.Subheader> 
-                  </Header>
-                </Grid.Column>
-              </Grid>
+              <PlayerCard/>
             </Grid.Column>
+
           </Grid>
         </Segment>
 
-        
+        <Segment style={{ padding: '6em 0em' }} vertical>
+          <Grid container columns="2" verticalAlign="middle" stackable>
+            
+            <Grid.Column>
+              <Segment  color="teal" container>
+                <Grid columns="3" textAlign="center" >
+                  <Grid.Column>
+                    <Header size="huge">
+                      88
+                      <Header.Subheader>ovr</Header.Subheader> 
+                    </Header>
+                  </Grid.Column>
+                  <Grid.Column>
+                    <Icon size="huge" name="long arrow alternate right" color="grey"/>
+                  </Grid.Column>
+                  <Grid.Column>
+                    <Header size="huge" color="green">
+                      95
+                      <Header.Subheader>ovr</Header.Subheader> 
+                    </Header>
+                  </Grid.Column>
+                </Grid>
+              </Segment> 
+            </Grid.Column>
+
+            <Grid.Column>
+              <Header size="large">
+              Like a player? Support them!
+              </Header>
+              <p>
+                If you think their rating will improve, say it with your money. 
+                You could win some cash if your favorite player's rating goes up.
+                Some of that money goes straight to that athlete's account. 
+                <br/><br/>
+                Everybody Wins!
+              </p>  
+            </Grid.Column>
+
+          </Grid>
+        </Segment>
+
+        {/* RATING BETS */}
+        <Segment style={{ padding: '8em 0em' }} vertical>
+          <Container textAlign="center">
+            <Header size="large">
+              Want to stay updated? Become an early adopter?
+              <Header.Subheader>Sign up for updates with your email</Header.Subheader>
+            </Header>
+            <Header size="huge">25,526 people want in!</Header>
+            <Container text>
+              <Input fluid icon={{ name: 'at', circular: true, link: true }} placeholder='Email' />
+            </Container>
+            <br/>
+            <Button positive animated='fade'>
+              <Button.Content visible>Sign Up!</Button.Content>
+              <Button.Content hidden>
+                <Icon name='thumbs up outline' />
+              </Button.Content>
+            </Button>
+          </Container>
+        </Segment>
+
       </div> 
     );
   }
