@@ -2,6 +2,20 @@
   text-align: center;
 }
 
+.home-init{
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-color: #222;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center
+}
+
+.home-header {
+  margin: auto;
+  color: white;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
