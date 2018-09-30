@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Header, Container, Grid, Segment, Icon, Input, Button } from 'semantic-ui-react';
+import { Header, Container, Grid, Segment, Icon, Input, Button, Divider } from 'semantic-ui-react';
 import PlayerCard from './Components/PlayerCard'
 
 class App extends Component {
@@ -9,12 +9,15 @@ class App extends Component {
       <div>
 
         {/* TOP OF PAGE */}
-        <Segment style={{ padding: '8em 0em' }}  vertical>
+        <div className="home-init">
           <Container text>
-            <Header size='huge'>Top Dagger</Header>
-            <Header color='grey' size='big'>Data Driven Sports Ratings IRL</Header>
+            
+            <Header size='huge' inverted><Icon inverted name='hand lizard'/>Top Dagger</Header>
+            <Header color='teal' size='big'>Data Driven Sports Ratings IRL</Header>
           </Container>
-        </Segment>
+        </div>
+
+        
 
         {/* WHAT IS DAGGER RATING */}
         <Segment style={{ padding: '6em 0em' }} vertical>
