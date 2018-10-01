@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Header, Container, Grid, Segment, Icon, Input, Button, Divider } from 'semantic-ui-react';
+import { Header, Container, Grid, Segment, Icon, Input, Button, Image } from 'semantic-ui-react';
 import PlayerCard from './Components/PlayerCard'
 
 class App extends Component {
@@ -10,21 +10,23 @@ class App extends Component {
 
         {/* TOP OF PAGE */}
         <div className="home-init">
+          
           <Container text>
-            
-            <Header size='huge' inverted><Icon inverted name='hand lizard'/>Top Dagger</Header>
-            <Header color='teal' size='big'>Data Driven Sports Ratings IRL</Header>
+          <Image size="tiny" src="https://s3-us-west-1.amazonaws.com/topdagger/dagger+icon.png" />
+            <Header size='huge'>Top Dagger</Header>
+            <Header color='teal' inverted size='big'>Data Driven Sports Ratings in real life</Header>
           </Container>
         </div>
-
-        
+        <Container textAlign='center' style={{padding:'3em 0em 0em 0em'}}>
+        <Header size='huge'>Prototype in Development!</Header>
+        </Container>
 
         {/* WHAT IS DAGGER RATING */}
         <Segment style={{ padding: '6em 0em' }} vertical>
           <Grid container columns="2" verticalAlign="middle" stackable >
             <Grid.Column >
               <Header size="large">
-              Ratings just like in the Video Games, but IRL
+              Ratings just like in the Video Games, but in real life
               </Header>
               <p>You ever wonder what 2K ratings would be like in real life? No need to wonder anymore. 
                 Dagger ratings tell you.</p>  
