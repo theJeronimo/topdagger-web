@@ -83,7 +83,7 @@ class App extends Component {
 
         {/* RATING BETS */}
         <Segment style={{ padding: '8em 0em' }} vertical>
-          {/* <Container textAlign="center">
+          <Container textAlign="center">
             <Header size="large">
               Want to stay updated? Become an early adopter?
               <Header.Subheader>Sign up for updates with your email</Header.Subheader>
@@ -91,7 +91,7 @@ class App extends Component {
             <Header size="huge">25,526 people want in!</Header>
              <Container text>
               <form name="email" method="POST" netlify>
-              <Input fluid icon={{ name: 'at', circular: true, link: true }} placeholder='Email' />
+              <Input type="email" name="email" fluid icon={{ name: 'at', circular: true, link: true }} placeholder='Email' />
               </form>
             </Container>
             <br/>
@@ -102,22 +102,8 @@ class App extends Component {
               </Button.Content>
               
             </Button>
-          </Container> */}
-          <form name="contact" method="post">
-          <input type="hidden" name="form-name" value="contact" />
-          <p>
-            <label>Your Name: <input type="text" name="name"/></label>
-          </p>
-          <p>
-            <label>Your Email: <input type="email" name="email"/></label>
-          </p>
-          <p>
-            <label>Message: <textarea name="message"></textarea></label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form>
+          </Container> 
+          
         </Segment> 
 
       </div> 
