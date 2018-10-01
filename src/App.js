@@ -29,7 +29,8 @@ class App extends Component {
               Ratings just like in the Video Games, but in real life
               </Header>
               <p>You ever wonder what 2K ratings would be like in real life? No need to wonder anymore. 
-                Dagger ratings tell you.</p>  
+                Dagger ratings tell you. Using a special set of algorithms, your rating will accurately tell you 
+                where your skills are at.</p>  
             </Grid.Column>
             
             {/* JOE DAGG RATING CARD */}
@@ -85,15 +86,15 @@ class App extends Component {
         <Segment style={{ padding: '8em 0em' }} vertical>
           <Container textAlign="center">
             <Header size="large">
-              Want to stay updated? Become an early adopter?
-              <Header.Subheader>Sign up for updates with your email</Header.Subheader>
+              Want to stay updated? Become an early adopter? Join the team?
+              <Header.Subheader>Sign up to receive special updates about Top Daggers with your email.</Header.Subheader>
             </Header>
-            <Header size="huge">25,526 people want in!</Header>
+            <Header size="huge">Over 100+ people want in!</Header>
              <Container text>
               <form name="email" method="POST" netlify>
                 <input type="hidden" name="form-name" value="email" />
                 <Input type="email" name="email" fluid icon={{ name: 'at', circular: true, link: true }} placeholder='Email' /> 
-
+                <br/>
                 <Button positive animated='fade' type="submit">
                   <Button.Content visible>Sign Up!</Button.Content>
                   <Button.Content hidden>
