@@ -90,19 +90,19 @@ class App extends Component {
             </Header>
             <Header size="huge">25,526 people want in!</Header>
              <Container text>
-              <form name="email" method="POST" netlify hidden>
+              <form name="email" method="POST" netlify>
                 <input type="hidden" name="form-name" value="email" />
-                <Input type="email" name="email" fluid icon={{ name: 'at', circular: true, link: true }} placeholder='Email' />
+                <Input type="email" name="email" fluid icon={{ name: 'at', circular: true, link: true }} placeholder='Email' /> 
+
+                <Button positive animated='fade' type="submit">
+                  <Button.Content visible>Sign Up!</Button.Content>
+                  <Button.Content hidden>
+                    <Icon name='thumbs up outline' />
+                  </Button.Content>
+                </Button>
               </form>
             </Container>
-            <br/>
-            <Button positive animated='fade' type="submit">
-              <Button.Content visible>Sign Up!</Button.Content>
-              <Button.Content hidden>
-                <Icon name='thumbs up outline' />
-              </Button.Content>
-              
-            </Button>
+            
           </Container> 
           
         </Segment> 
