@@ -13,7 +13,7 @@ class App extends Component {
           
           <Container text>
           
-            <Header size='huge'><Image size="huge" src="https://s3-us-west-1.amazonaws.com/topdagger/dagger+icon.png" />Top Dagger</Header>
+            <Header size='huge'><Image size="huge" src="https://s3-us-west-1.amazonaws.com/topdagger/dagger+icon.png" />Top Daggers</Header>
             <Header color='teal' inverted size='big'>Data Driven Sports Ratings in real life</Header>
           </Container>
         </div>
