@@ -12,8 +12,8 @@ class App extends Component {
         <div className="home-init">
           
           <Container text>
-          <Image size="tiny" src="https://s3-us-west-1.amazonaws.com/topdagger/dagger+icon.png" />
-            <Header size='huge'>Top Dagger</Header>
+          
+            <Header size='huge'><Image size="huge" src="https://s3-us-west-1.amazonaws.com/topdagger/dagger+icon.png" />Top Dagger</Header>
             <Header color='teal' inverted size='big'>Data Driven Sports Ratings in real life</Header>
           </Container>
         </div>
